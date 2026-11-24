@@ -1,0 +1,70 @@
+{
+  "nome": "Rams Select",
+  "slug": "rams-select",
+  "negocio": "Casa de carnes premium e tudo para o churrasco: cortes nobres, embutidos coloniais da marca própria Borrússia, queijos, vinhos, acessórios. Lojas com restaurante e padaria em Cachoeirinha, distribuidora para negócios. Desde 2003.",
+  "publico": "Churrasqueiros exigentes e famílias da região metropolitana de Porto Alegre (Cachoeirinha, Canoas, Gravataí); restaurantes e mercados atendidos pela distribuidora",
+  "identidade": {
+    "cores": {
+      "fundo": "#171214",
+      "texto": "#F3ECE4",
+      "acento": "#B3292E"
+    },
+    "fontes": {
+      "titulo": "Fraunces",
+      "texto": "Inter Tight"
+    },
+    "clima": [
+      "premium",
+      "sofisticado",
+      "quente"
+    ],
+    "tema": "escuro"
+  },
+  "logo": "fonte/logo-original.jpg",
+  "copy": {
+    "frase_abertura": "Aqui, qualidade não se discute. Se reconhece.",
+    "diferenciais": [
+      "desde 2003, começou nos fundos da casa em Cachoeirinha",
+      "marca própria Borrússia: embutidos coloniais do Rio Grande do Sul",
+      "queijos Della Vita: Gouda, Gruyère, Colonial, Provolone",
+      "4 lojas: Cachoeirinha, Canoas, Gravataí Parada 79, Gravataí Confraria",
+      "restaurante e padaria na loja de Cachoeirinha",
+      "distribuidora com frota própria: entrega em toda a região Sul até Torres",
+      "nota 4,9 no Google"
+    ],
+    "textos_prontos": "Tudo para o seu churrasco. Venha provar na brasa. Quem abastece o seu negócio. A excelência que você sente no primeiro corte. Feita para quem exige o melhor.",
+    "depoimentos_reais": []
+  },
+  "referencias": [
+    "https://compreramsselect.com/",
+    "https://ramsselect.vercel.app/",
+    "sites premium da indústria alimentícia, estilo Apple com rolagem"
+  ],
+  "whatsapp": {
+    "numero": "5551992006511",
+    "mensagem": "Olá! Vim pelo site da Rams Select e quero saber mais sobre os produtos."
+  },
+  "instagram": "@ramsselect",
+  "email_contato": "ramsselect1501@gmail.com",
+  "lojas": [
+    {"nome": "Cachoeirinha", "endereco": "Av. Frederico Augusto Ritter, 751", "horario": "Seg a sex 7h às 20h · Sáb 7h às 18h", "extras": "Restaurante (seg a sáb, 11h30 às 14h30), padaria (todos os dias, 7h às 20h) e churrasqueira de degustação"},
+    {"nome": "Canoas", "endereco": "", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""},
+    {"nome": "Gravataí · Parada 79", "endereco": "Ao lado do Posto Apolo", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""},
+    {"nome": "Gravataí · Confraria", "endereco": "Ao lado da Confraria do Doce", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""}
+  ],
+  "secoes": [
+    "abertura",
+    "sobre",
+    "acougue (cortes nobres)",
+    "borrussia (marca chefe)",
+    "restaurante + cardapio seg a sab (ficticio, premium)",
+    "lojas",
+    "atacado",
+    "contato"
+  ],
+  "conceito": "Entrar na Rams: a porta vermelha se abre e a câmera atravessa a loja até a vitrine de carnes nobres, onde a luz pousa num corte de wagyu.",
+  "modelos": {
+    "video": "google/veo-3.1",
+    "imagem": "google/gemini-3-pro-image"
+  }
+}

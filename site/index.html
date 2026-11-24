@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rams Select · Tudo para o seu churrasco, desde 2003</title>
+  <meta name="description" content="Casa de carnes premium em Cachoeirinha, Canoas e Gravataí. Cortes nobres, embutidos Borrússia, queijos, vinhos e tudo para o churrasco. Restaurante e distribuidora.">
+  <meta property="og:title" content="Rams Select · Tudo para o seu churrasco">
+  <meta property="og:description" content="Cortes nobres, embutidos Borrússia e tudo para o churrasco. Lojas em Cachoeirinha, Canoas e Gravataí, desde 2003.">
+  <meta property="og:image" content="assets/frames/desktop/f_0001.webp">
+  <meta name="theme-color" content="#171214">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/frames/desktop/f_0001.webp">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="topo">
+  <a href="#inicio" class="marca" aria-label="Rams Select">
+    <img src="assets/logo.png" alt="Rams Select" class="marca-logo">
+  </a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#sobre">Sobre</a>
+    <a href="#acougue">Açougue</a>
+    <a href="#monte">Monte aqui</a>
+    <a href="#borrussia">Borrússia</a>
+    <a href="#restaurante">Restaurante</a>
+    <a href="#lojas">Lojas</a>
+    <a href="#atacado">Atacado</a>
+    <a href="#contato" class="menu-cta">Fale conosco</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ABERTURA: o vídeo toca com a rolagem. Cada .momento aparece numa faixa do progresso (0 a 1). -->
+  <section id="inicio" class="cine" style="--altura: 440vh">
+    <div class="cine-palco">
+      <canvas class="cine-canvas" aria-hidden="true"></canvas>
+      <div class="cine-vinheta"></div>
+
+      <div class="momento" data-de="0.16" data-ate="0.34">
+        <div class="painel painel--vidro">
+          <h1 class="titulo-abertura">Aqui, qualidade não se discute. Se reconhece.</h1>
+          <p class="apoio">Tudo para o seu churrasco, desde 2003.</p>
+        </div>
+      </div>
+      <div class="momento momento--direita" data-de="0.4" data-ate="0.66">
+        <div class="painel painel--vidro">
+          <p class="destaque">Vinhos, queijos, embutidos Borrússia e o balcão de cortes nobres. Entre: a casa é sua.</p>
+        </div>
+      </div>
+      <div class="momento momento--centro" data-de="0.72" data-ate="1">
+        <div class="painel painel--vidro">
+          <p class="destaque">Wagyu, picanha, tomahawk. Venha provar na brasa.</p>
+          <a href="#lojas" class="botao">Encontrar a loja mais perto</a>
+        </div>
+      </div>
+
+      <div class="cine-dica" aria-hidden="true"><span></span>role</div>
+    </div>
+  </section>
+
+  <!-- SOBRE: imagem fundida à direita, texto em painel à esquerda -->
+  <section id="sobre" class="secao">
+    <img class="arte arte--direita" src="assets/img/sobre.webp" alt="" loading="lazy">
+    <div class="secao-grade">
+      <div class="painel revelar">
+        <span class="rotulo">01 · Desde 2003</span>
+        <h2>Começou nos fundos de casa, em Cachoeirinha.</h2>
+        <p>Regio e Elisângela montaram a primeira distribuição com um carro velho e a ideia de fazer diferente: escolher cada peça como se fosse para a própria mesa. Vinte e poucos anos depois, a Rams tem quatro lojas na região metropolitana, uma distribuidora com frota própria e uma marca de embutidos que leva o nome da casa.</p>
+        <p>O jeito de trabalhar continua o mesmo. Procedência conferida, corte feito na hora e a certeza de que a carne que sai daqui vai fazer bonito na churrasqueira.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AÇOUGUE: imagem de fundo dissolvida, cartões por cima -->
+  <section id="acougue" class="secao secao--larga">
+    <img class="arte arte--fundo" src="assets/img/acougue.webp" alt="" loading="lazy">
+    <div class="painel painel--cabecalho revelar">
+      <span class="rotulo">02 · O balcão</span>
+      <h2>Cortes nobres e tudo o que vai em volta.</h2>
+      <p>Carne de procedência, maturação certa e um açougueiro que sabe o que está vendendo. O resto do churrasco também está aqui.</p>
+    </div>
+    <div class="cartoes">
+      <article class="painel cartao revelar">
+        <h3>Carnes nobres</h3>
+        <p>Wagyu marmorizado, picanha com capa de gordura, tomahawk, bife ancho, costela e fraldinha. Cortes feitos na hora, na espessura que você pedir.</p>
+      </article>
+      <article class="painel cartao revelar">
+        <h3>Embutidos e defumados</h3>
+        <p>Linguiças coloniais, salames e defumados da Borrússia, a marca da casa, com receita do interior do Rio Grande do Sul.</p>
+      </article>
+      <article class="painel cartao revelar">
+        <h3>Queijos e tábua</h3>
+        <p>Gouda, Gruyère, Provolone e Colonial da Della Vita para a tábua de entrada, com vinhos e cervejas para acompanhar.</p>
+      </article>
+      <article class="painel cartao revelar">
+        <h3>Para a churrasqueira</h3>
+        <p>Carvão, sal grosso, facas, tábuas e temperos Buenas Parrilla. Você chega com a lista e sai com o churrasco inteiro resolvido.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- MONTE AQUI: o cliente monta o kit de churrasco ou a tábua de frios e reserva pelo WhatsApp -->
+  <section id="monte" class="secao secao--larga secao--monte">
+    <img class="arte arte--fundo arte--suave" src="assets/img/contato.webp" alt="" loading="lazy">
+    <div class="painel painel--cabecalho revelar">
+      <span class="rotulo">03 · Monte aqui</span>
+      <h2>Monte seu kit e retire na loja.</h2>
+      <p>Escolha o que vai na churrasqueira ou na tábua, diga para quantas pessoas, e a gente separa tudo para você buscar.</p>
+    </div>
+
+    <div class="montar revelar" data-montar>
+      <div class="painel montar-controles">
+        <div class="montar-abas" role="tablist" aria-label="Tipo de montagem">
+          <button type="button" class="montar-aba ativa" role="tab" data-tipo="churrasco" aria-selected="true">Kit de churrasco</button>
+          <button type="button" class="montar-aba" role="tab" data-tipo="tabua" aria-selected="false">Tábua de frios</button>
+        </div>
+        <div class="montar-pessoas">
+          <span>Para quantas pessoas?</span>
+          <div class="montar-stepper">
+            <button type="button" data-pessoas="-1" aria-label="Menos pessoas">−</button>
+            <output data-pessoas-valor>6</output>
+            <button type="button" data-pessoas="1" aria-label="Mais pessoas">+</button>
+          </div>
+        </div>
+        <ul class="montar-itens" data-itens></ul>
+      </div>
+
+      <div class="painel montar-mesa">
+        <div class="montar-cena" data-cena>
+          <svg class="montar-base" viewBox="0 0 640 400" aria-hidden="true">
+            <defs>
+              <linearGradient id="g-madeira" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8a5a34"/><stop offset=".5" stop-color="#6e4526"/><stop offset="1" stop-color="#4f2f18"/>
+              </linearGradient>
+              <linearGradient id="g-papel" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2a2124"/><stop offset="1" stop-color="#1b1517"/>
+              </linearGradient>
+              <radialGradient id="g-luz" cx=".5" cy=".3" r=".8">
+                <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g data-base="tabua">
+              <ellipse cx="320" cy="372" rx="250" ry="18" fill="#000" opacity=".45"/>
+              <rect x="60" y="60" width="520" height="300" rx="150" fill="url(#g-madeira)"/>
+              <rect x="60" y="60" width="520" height="300" rx="150" fill="url(#g-luz)"/>
+              <path d="M110 120c120-30 300-30 420 0M100 200c130-20 310-20 440 0M110 280c120 30 300 30 420 0" stroke="#3f2411" stroke-opacity=".35" stroke-width="3" fill="none"/>
+              <circle cx="560" cy="210" r="14" fill="#2a1609"/>
+            </g>
+            <g data-base="kit" style="display:none">
+              <ellipse cx="320" cy="376" rx="260" ry="16" fill="#000" opacity=".45"/>
+              <path d="M70 110h500l-28 250H98z" fill="url(#g-papel)" stroke="#3a2d31" stroke-width="2"/>
+              <path d="M70 110h500l14-30H56z" fill="#b3292e"/>
+              <path d="M300 92h40" stroke="#f3ece4" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+              <text x="320" y="345" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="13" letter-spacing="4" fill="#f3ece4" fill-opacity=".35">KIT CHURRASCO</text>
+            </g>
+          </svg>
+          <div class="montar-pecas" data-pecas></div>
+          <p class="montar-vazio" data-vazio>Toque nos itens ao lado para começar a montar.</p>
+        </div>
+        <div class="montar-resumo">
+          <h3 data-resumo-titulo>Kit de churrasco para 6 pessoas</h3>
+          <ul class="montar-lista" data-lista></ul>
+          <p class="montar-total"><span data-total>Nada escolhido ainda</span></p>
+          <a class="botao" target="_blank" rel="noopener" data-reservar hidden>Reservar pelo WhatsApp</a>
+          <p class="nota">Você paga na retirada. A gente confirma disponibilidade e horário pelo WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BORRÚSSIA: imagem fundida à esquerda, texto à direita -->
+  <section id="borrussia" class="secao">
+    <img class="arte arte--esquerda" src="assets/img/borrussia.webp" alt="" loading="lazy">
+    <div class="secao-grade secao-grade--direita">
+      <div class="painel revelar">
+        <span class="rotulo">04 · Marca da casa</span>
+        <h2>Borrússia, o embutido que leva o nosso nome.</h2>
+        <p>Quando não encontramos a linguiça que queríamos vender, passamos a fazer. A Borrússia nasceu assim: carne selecionada, tempero colonial e defumação lenta, sem pressa e sem atalho.</p>
+        <ol class="passos">
+          <li><strong>Linguiça colonial</strong><span>A clássica da churrasqueira: suculenta, com tempero na medida, para assar inteira ou na tábua.</span></li>
+          <li><strong>Salames e copas</strong><span>Curados no tempo certo, para fatiar fino na tábua ou comer de pé, na frente da brasa.</span></li>
+          <li><strong>Defumados</strong><span>Bacon, costelinha e linguiça defumada em lenha, para o feijão, a farofa e o espeto.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURANTE: imagem fundida à direita, cardápio da semana à esquerda -->
+  <section id="restaurante" class="secao">
+    <img class="arte arte--direita" src="assets/img/restaurante.webp" alt="" loading="lazy">
+    <div class="secao-grade">
+      <div class="painel revelar">
+        <span class="rotulo">05 · Restaurante · Cachoeirinha</span>
+        <h2>Almoço na brasa, de segunda a sábado.</h2>
+        <p>Na loja de Cachoeirinha a churrasqueira fica acesa das 11h30 às 14h30. A carne vem do balcão ao lado, assada na hora. Um prato principal por dia, com acompanhamentos da casa.</p>
+        <ul class="cardapio">
+          <li><span class="dia">Seg</span><strong>Picanha na brasa</strong><span>Arroz carreteiro, vinagrete e farofa com linguiça Borrússia</span></li>
+          <li><span class="dia">Ter</span><strong>Costela de 8 horas</strong><span>Mandioca na manteiga, salada verde e molho de alho assado</span></li>
+          <li><span class="dia">Qua</span><strong>Fraldinha ao chimichurri</strong><span>Batata rústica, maionese da casa e cebola na brasa</span></li>
+          <li><span class="dia">Qui</span><strong>Bife ancho com linguiça Borrússia</strong><span>Polenta cremosa de parmesão e vinagrete de pimentão assado</span></li>
+          <li><span class="dia">Sex</span><strong>Tomahawk em fatias</strong><span>Risoto de parmesão, legumes grelhados e manteiga de ervas</span></li>
+          <li><span class="dia">Sáb</span><strong>Churrasco completo</strong><span>Picanha, costela, coração e linguiça, com feijão tropeiro, arroz e saladas</span></li>
+        </ul>
+        <p class="nota">Cardápio sujeito a alteração conforme o balcão do dia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOJAS: imagem fundida à esquerda, unidades à direita -->
+  <section id="lojas" class="secao">
+    <img class="arte arte--esquerda" src="assets/img/lojas.webp" alt="" loading="lazy">
+    <div class="secao-grade secao-grade--direita">
+      <div class="painel revelar">
+        <span class="rotulo">06 · Quatro lojas</span>
+        <h2>Cachoeirinha, Canoas e Gravataí.</h2>
+        <ul class="lojas">
+          <li>
+            <strong>Cachoeirinha</strong>
+            <span>Av. Frederico Augusto Ritter, 751</span>
+            <span>Seg a sex, 7h às 20h · Sáb, 7h às 18h</span>
+            <em>Restaurante, padaria e churrasqueira de degustação</em>
+          </li>
+          <li>
+            <strong>Canoas</strong>
+            <span>Seg a sex, 9h às 20h · Sáb, 8h às 18h</span>
+          </li>
+          <li>
+            <strong>Gravataí · Parada 79</strong>
+            <span>Ao lado do Posto Apolo</span>
+            <span>Seg a sex, 9h às 20h · Sáb, 8h às 18h</span>
+          </li>
+          <li>
+            <strong>Gravataí · Confraria</strong>
+            <span>Ao lado da Confraria do Doce</span>
+            <span>Seg a sex, 9h às 20h · Sáb, 8h às 18h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATACADO: imagem de fundo dissolvida, texto centralizado -->
+  <section id="atacado" class="secao secao--larga">
+    <img class="arte arte--fundo" src="assets/img/atacado.webp" alt="" loading="lazy">
+    <div class="painel painel--cabecalho revelar">
+      <span class="rotulo">07 · Distribuidora</span>
+      <h2>Quem abastece o seu negócio.</h2>
+      <p>Restaurante, mercado, padaria ou buffet: a Rams entrega com frota própria em toda a região Sul, até Torres. Seis catálogos, com Borrússia, Della Vita e Halberth no portfólio, e um atendimento que confirma preço, disponibilidade e prazo antes de fechar.</p>
+    </div>
+    <div class="cartoes cartoes--tres">
+      <article class="painel cartao revelar">
+        <h3>Até R$ 1.199,99</h3>
+        <p>Frete calculado pela distância.</p>
+      </article>
+      <article class="painel cartao revelar">
+        <h3>De R$ 1.200 a R$ 1.499,99</h3>
+        <p>Meio frete.</p>
+      </article>
+      <article class="painel cartao revelar">
+        <h3>A partir de R$ 1.500</h3>
+        <p>Frete grátis, com entrega agendada.</p>
+      </article>
+    </div>
+    <a class="botao revelar" target="_blank" rel="noopener" href="https://wa.me/5551992006511?text=Ol%C3%A1!%20Quero%20receber%20os%20cat%C3%A1logos%20da%20distribuidora%20Rams%20Select.">Pedir os catálogos no WhatsApp</a>
+  </section>
+
+  <!-- CONTATO: cadastro que dispara para o e-mail configurado em config.js -->
+  <section id="contato" class="secao secao--contato">
+    <img class="arte arte--fundo arte--suave" src="assets/img/contato.webp" alt="" loading="lazy">
+    <div class="contato-grade">
+    <div class="painel painel--form revelar">
+      <span class="rotulo">08 · Contato</span>
+      <h2>Fale com a Rams.</h2>
+      <p>Encomenda para o fim de semana, dúvida sobre um corte ou orçamento para o seu negócio: deixe seu contato que a gente responde.</p>
+      <form class="form" novalidate>
+        <div class="campo">
+          <label for="f-nome">Nome</label>
+          <input id="f-nome" name="nome" autocomplete="name" required>
+        </div>
+        <div class="campo">
+          <label for="f-email">E-mail</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="campo">
+          <label for="f-tel">WhatsApp</label>
+          <input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="campo campo--inteiro">
+          <label for="f-msg">Como podemos ajudar?</label>
+          <textarea id="f-msg" name="mensagem" rows="4"></textarea>
+        </div>
+        <input type="text" name="_honey" class="pote" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="botao campo--inteiro">Enviar</button>
+        <p class="form-status campo--inteiro" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <aside class="painel painel--insta revelar">
+      <span class="rotulo">Instagram</span>
+      <a class="insta-cartao" href="https://instagram.com/ramsselect" target="_blank" rel="noopener">
+        <span class="insta-cartao-avatar"><img src="assets/insta-avatar.png" alt=""></span>
+        <span class="insta-cartao-nome">@ramsselect</span>
+      </a>
+      <h3>Siga a Rams no Instagram.</h3>
+      <p>Bastidores do balcão, novidades da Borrússia, ofertas da semana e o Grupo VIP com sorteios para quem acompanha a gente.</p>
+      <a class="botao botao--insta" href="https://instagram.com/ramsselect" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>
+        Seguir @ramsselect
+      </a>
+    </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="painel rodape-painel">
+    <img src="assets/logo.png" alt="Rams Select" class="rodape-logo">
+    <span>Cachoeirinha · Canoas · Gravataí · RS</span>
+    <span>© <span data-ano></span> Rams Select · Desde 2003</span>
+  </div>
+</footer>
+
+<a class="insta" href="https://instagram.com/ramsselect" target="_blank" rel="noopener" aria-label="Instagram @ramsselect">
+  <span class="insta-avatar"><img src="assets/insta-avatar.png" alt=""></span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor"/></svg>
+  <span class="insta-nome">@ramsselect</span>
+</a>
+
+<a class="whats" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3Zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.3-4-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.5 9.8 10.2 5.2 16 5.2s10.5 4.6 10.5 10.4S21.8 26.1 16 26.1Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>
+</a>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="montar.js"></script>
+</body>
+</html>
