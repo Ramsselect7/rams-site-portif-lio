@@ -1,6 +1,6 @@
 # Servidor local do site Rams Select (sem instalar nada: usa o PowerShell do Windows).
 # Serve a pasta "site" em http://localhost:4173 e abre o navegador. Ctrl+C para parar.
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 $porta = 4173
 $raiz = Join-Path $PSScriptRoot "site"
 if (-not (Test-Path (Join-Path $raiz "index.html"))) { Write-Host "Pasta 'site' nao encontrada ao lado deste arquivo."; exit 1 }
@@ -25,18 +25,23 @@ Start-Process "http://localhost:$porta/"
 
 $raizCompleta = (Resolve-Path $raiz).Path
 while ($ouvinte.IsListening) {
+  $ctx = $null
+  try { $ctx = $ouvinte.GetContext() } catch { continue }
+  $resp = $ctx.Response
   try {
-    $ctx = $ouvinte.GetContext()
     $caminho = [uri]::UnescapeDataString($ctx.Request.Url.AbsolutePath)
     if ($caminho -eq "/") { $caminho = "/index.html" }
     $arquivo = Join-Path $raiz ($caminho.TrimStart("/") -replace "/", "\")
     $arquivoCompleto = [System.IO.Path]::GetFullPath($arquivo)
-    $resp = $ctx.Response
     $resp.Headers["Cache-Control"] = "no-store"
-    if ($arquivoCompleto.StartsWith($raizCompleta) -and (Test-Path $arquivoCompleto -PathType Leaf)) {
+    if ($arquivoCompleto.StartsWith($raizCompleta) -and (Test-Path -LiteralPath $arquivoCompleto -PathType Leaf)) {
       $ext = [System.IO.Path]::GetExtension($arquivoCompleto).ToLower()
       $resp.ContentType = if ($tipos.ContainsKey($ext)) { $tipos[$ext] } else { "application/octet-stream" }
-      $bytes = [System.IO.File]::ReadAllBytes($arquivoCompleto)
+      $bytes = $null
+      for ($t = 0; $t -lt 5 -and $bytes -eq $null; $t++) {
+        try { $bytes = [System.IO.File]::ReadAllBytes($arquivoCompleto) } catch { Start-Sleep -Milliseconds 150 }
+      }
+      if ($bytes -eq $null) { $bytes = [byte[]]@() }
       $resp.ContentLength64 = $bytes.Length
       $resp.OutputStream.Write($bytes, 0, $bytes.Length)
     } else {
@@ -45,6 +50,9 @@ while ($ouvinte.IsListening) {
       $resp.ContentType = "text/plain; charset=utf-8"
       $resp.OutputStream.Write($bytes, 0, $bytes.Length)
     }
-    $resp.OutputStream.Close()
-  } catch { }
+  } catch {
+    try { $resp.StatusCode = 500 } catch { }
+  } finally {
+    try { $resp.OutputStream.Close() } catch { }
+  }
 }
