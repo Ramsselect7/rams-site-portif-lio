@@ -25,7 +25,6 @@
   <nav class="menu" aria-label="Seções">
     <a href="#sobre">Sobre</a>
     <a href="#acougue">Açougue</a>
-    <a href="#monte">Monte aqui</a>
     <a href="#borrussia">Borrússia</a>
     <a href="#restaurante">Restaurante</a>
     <a href="#lojas">Lojas</a>
@@ -105,81 +104,12 @@
     </div>
   </section>
 
-  <!-- MONTE AQUI: o cliente monta o kit de churrasco ou a tábua de frios e reserva pelo WhatsApp -->
-  <section id="monte" class="secao secao--larga secao--monte">
-    <img class="arte arte--fundo arte--suave" src="assets/img/contato.webp" alt="" loading="lazy">
-    <div class="painel painel--cabecalho revelar">
-      <span class="rotulo">03 · Monte aqui</span>
-      <h2>Monte seu kit e retire na loja.</h2>
-      <p>Escolha o que vai na churrasqueira ou na tábua, diga para quantas pessoas, e a gente separa tudo para você buscar.</p>
-    </div>
-
-    <div class="montar revelar" data-montar>
-      <div class="painel montar-controles">
-        <div class="montar-abas" role="tablist" aria-label="Tipo de montagem">
-          <button type="button" class="montar-aba ativa" role="tab" data-tipo="churrasco" aria-selected="true">Kit de churrasco</button>
-          <button type="button" class="montar-aba" role="tab" data-tipo="tabua" aria-selected="false">Tábua de frios</button>
-        </div>
-        <div class="montar-pessoas">
-          <span>Para quantas pessoas?</span>
-          <div class="montar-stepper">
-            <button type="button" data-pessoas="-1" aria-label="Menos pessoas">−</button>
-            <output data-pessoas-valor>6</output>
-            <button type="button" data-pessoas="1" aria-label="Mais pessoas">+</button>
-          </div>
-        </div>
-        <ul class="montar-itens" data-itens></ul>
-      </div>
-
-      <div class="painel montar-mesa">
-        <div class="montar-cena" data-cena>
-          <svg class="montar-base" viewBox="0 0 640 400" aria-hidden="true">
-            <defs>
-              <linearGradient id="g-madeira" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#8a5a34"/><stop offset=".5" stop-color="#6e4526"/><stop offset="1" stop-color="#4f2f18"/>
-              </linearGradient>
-              <linearGradient id="g-papel" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#2a2124"/><stop offset="1" stop-color="#1b1517"/>
-              </linearGradient>
-              <radialGradient id="g-luz" cx=".5" cy=".3" r=".8">
-                <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <g data-base="tabua">
-              <ellipse cx="320" cy="372" rx="250" ry="18" fill="#000" opacity=".45"/>
-              <rect x="60" y="60" width="520" height="300" rx="150" fill="url(#g-madeira)"/>
-              <rect x="60" y="60" width="520" height="300" rx="150" fill="url(#g-luz)"/>
-              <path d="M110 120c120-30 300-30 420 0M100 200c130-20 310-20 440 0M110 280c120 30 300 30 420 0" stroke="#3f2411" stroke-opacity=".35" stroke-width="3" fill="none"/>
-              <circle cx="560" cy="210" r="14" fill="#2a1609"/>
-            </g>
-            <g data-base="kit" style="display:none">
-              <ellipse cx="320" cy="376" rx="260" ry="16" fill="#000" opacity=".45"/>
-              <path d="M70 110h500l-28 250H98z" fill="url(#g-papel)" stroke="#3a2d31" stroke-width="2"/>
-              <path d="M70 110h500l14-30H56z" fill="#b3292e"/>
-              <path d="M300 92h40" stroke="#f3ece4" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
-              <text x="320" y="345" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="13" letter-spacing="4" fill="#f3ece4" fill-opacity=".35">KIT CHURRASCO</text>
-            </g>
-          </svg>
-          <div class="montar-pecas" data-pecas></div>
-          <p class="montar-vazio" data-vazio>Toque nos itens ao lado para começar a montar.</p>
-        </div>
-        <div class="montar-resumo">
-          <h3 data-resumo-titulo>Kit de churrasco para 6 pessoas</h3>
-          <ul class="montar-lista" data-lista></ul>
-          <p class="montar-total"><span data-total>Nada escolhido ainda</span></p>
-          <a class="botao" target="_blank" rel="noopener" data-reservar hidden>Reservar pelo WhatsApp</a>
-          <p class="nota">Você paga na retirada. A gente confirma disponibilidade e horário pelo WhatsApp.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- BORRÚSSIA: imagem fundida à esquerda, texto à direita -->
   <section id="borrussia" class="secao">
     <img class="arte arte--esquerda" src="assets/img/borrussia.webp" alt="" loading="lazy">
     <div class="secao-grade secao-grade--direita">
       <div class="painel revelar">
-        <span class="rotulo">04 · Marca da casa</span>
+        <span class="rotulo">03 · Marca da casa</span>
         <h2>Borrússia, o embutido que leva o nosso nome.</h2>
         <p>Quando não encontramos a linguiça que queríamos vender, passamos a fazer. A Borrússia nasceu assim: carne selecionada, tempero colonial e defumação lenta, sem pressa e sem atalho.</p>
         <ol class="passos">
@@ -196,7 +126,7 @@
     <img class="arte arte--direita" src="assets/img/restaurante.webp" alt="" loading="lazy">
     <div class="secao-grade">
       <div class="painel revelar">
-        <span class="rotulo">05 · Restaurante · Cachoeirinha</span>
+        <span class="rotulo">04 · Restaurante · Cachoeirinha</span>
         <h2>Almoço na brasa, de segunda a sábado.</h2>
         <p>Na loja de Cachoeirinha a churrasqueira fica acesa das 11h30 às 14h30. A carne vem do balcão ao lado, assada na hora. Um prato principal por dia, com acompanhamentos da casa.</p>
         <ul class="cardapio">
@@ -217,7 +147,7 @@
     <img class="arte arte--esquerda" src="assets/img/lojas.webp" alt="" loading="lazy">
     <div class="secao-grade secao-grade--direita">
       <div class="painel revelar">
-        <span class="rotulo">06 · Quatro lojas</span>
+        <span class="rotulo">05 · Quatro lojas</span>
         <h2>Cachoeirinha, Canoas e Gravataí.</h2>
         <ul class="lojas">
           <li>
@@ -266,7 +196,7 @@
   <section id="atacado" class="secao secao--larga">
     <img class="arte arte--fundo" src="assets/img/atacado.webp" alt="" loading="lazy">
     <div class="painel painel--cabecalho revelar">
-      <span class="rotulo">07 · Distribuidora</span>
+      <span class="rotulo">06 · Distribuidora</span>
       <h2>Quem abastece o seu negócio.</h2>
       <p>Restaurante, mercado, padaria ou buffet: a Rams entrega com frota própria em toda a região Sul, até Torres. Seis catálogos, com Borrússia, Della Vita e Halberth no portfólio, e um atendimento que confirma preço, disponibilidade e prazo antes de fechar.</p>
     </div>
@@ -292,7 +222,7 @@
     <img class="arte arte--fundo arte--suave" src="assets/img/contato.webp" alt="" loading="lazy">
     <div class="contato-grade">
     <div class="painel painel--form revelar">
-      <span class="rotulo">08 · Contato</span>
+      <span class="rotulo">07 · Contato</span>
       <h2>Fale com a Rams.</h2>
       <p>Encomenda para o fim de semana, dúvida sobre um corte ou orçamento para o seu negócio: deixe seu contato que a gente responde.</p>
       <form class="form" novalidate>
@@ -356,6 +286,5 @@
 
 <script src="config.js"></script>
 <script src="app.js"></script>
-<script src="montar.js"></script>
 </body>
 </html>

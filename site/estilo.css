@@ -268,60 +268,6 @@ p { margin: 0 0 1em; color: var(--texto-suave); text-wrap: pretty; }
 .insta svg { width: 18px; height: 18px; opacity: .85; }
 @media (max-width: 480px) { .insta { padding-right: 12px; } .insta-nome { display: none; } }
 
-/* ── Monte aqui ────────────────────────────────────────────────────────── */
-.montar { width: 100%; max-width: var(--largura); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
-.montar-controles { display: grid; gap: 18px; align-content: start; }
-.montar-abas { display: flex; gap: 6px; padding: 4px; border: 1px solid var(--linha); border-radius: 999px; width: max-content; max-width: 100%; }
-.montar-aba { font: 500 14px/1 var(--fonte-texto); color: var(--texto-suave); background: none; border: 0; border-radius: 999px; padding: 10px 18px; cursor: pointer; transition: background .3s, color .3s; }
-.montar-aba.ativa { background: var(--acento); color: var(--acento-texto); }
-.montar-pessoas { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--texto-suave); }
-.montar-stepper { display: inline-flex; align-items: center; border: 1px solid var(--linha); border-radius: 999px; }
-.montar-stepper button, .montar-ajuste button {
-  width: 38px; height: 38px; border: 0; background: none; color: var(--texto); font: 500 20px/1 var(--fonte-texto); cursor: pointer; border-radius: 999px;
-}
-.montar-stepper button:hover, .montar-ajuste button:hover { background: rgb(255 255 255 / .07); }
-.montar-stepper output { min-width: 34px; text-align: center; font-family: var(--fonte-titulo); font-size: 22px; color: var(--texto); }
-.montar-itens { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.montar-item { display: flex; align-items: center; gap: 4px; }
-.montar-item-btn {
-  flex: 1; min-width: 0; display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 12px; text-align: left;
-  padding: 8px 12px 8px 8px; background: rgb(255 255 255 / .03); border: 1px solid var(--linha); border-radius: 14px; color: var(--texto); cursor: pointer;
-  font: inherit; transition: border-color .3s, background .3s, transform .3s var(--ease);
-}
-.montar-item-btn:hover { background: rgb(255 255 255 / .06); transform: translateY(-1px); }
-.montar-item.ativo .montar-item-btn { border-color: var(--acento); background: color-mix(in srgb, var(--acento) 14%, transparent); }
-.montar-icone { width: 40px; height: 40px; display: grid; place-items: center; }
-.montar-icone svg { width: 38px; height: 38px; }
-.montar-texto { display: grid; gap: 1px; min-width: 0; }
-.montar-texto strong { font-weight: 600; font-size: 14px; line-height: 1.2; }
-.montar-texto small { font-size: 12px; color: var(--texto-suave); line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.montar-qtd { font-family: var(--fonte-titulo); font-size: 16px; color: var(--acento); white-space: nowrap; min-width: 1.2em; text-align: right; }
-.montar-ajuste { display: flex; flex: none; border: 1px solid var(--linha); border-radius: 999px; }
-.montar-ajuste[hidden] { display: none; }
-.montar-ajuste button { width: 32px; height: 32px; font-size: 18px; }
-
-.montar-mesa { display: grid; gap: 16px; align-content: start; align-self: start; position: sticky; top: 84px; }
-.montar-cena { position: relative; aspect-ratio: 16 / 10; }
-.montar-base { width: 100%; height: 100%; display: block; }
-.montar-pecas { position: absolute; inset: 0; pointer-events: none; }
-.montar-peca {
-  position: absolute; width: 21%; aspect-ratio: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--esc));
-  filter: drop-shadow(0 8px 10px rgb(0 0 0 / .45));
-  animation: pousar .5s var(--ease) both;
-}
-.montar-peca svg { width: 100%; height: 100%; }
-@keyframes pousar { from { opacity: 0; transform: translate(-50%, -90%) rotate(var(--rot)) scale(1.3); } to { opacity: 1; transform: translate(-50%, -50%) rotate(var(--rot)) scale(var(--esc)); } }
-.montar-vazio { position: absolute; inset: auto 0 6%; margin: 0; text-align: center; font-size: 14px; color: var(--texto-suave); }
-.montar-resumo h3 { margin-bottom: .3em; }
-.montar-lista { list-style: none; margin: 0; padding: 0; display: grid; }
-.montar-lista li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--linha); font-size: 15px; }
-.montar-lista strong { font-weight: 600; color: var(--acento); }
-.montar-total { margin: 12px 0 14px; font-size: 14px; }
-.montar-resumo .botao { width: 100%; }
-.montar-resumo .nota { margin-top: 12px; }
-@media (max-width: 960px) { .montar { grid-template-columns: 1fr; } .montar-mesa { position: static; } }
-@media (max-width: 520px) { .montar-pessoas { flex-direction: column; align-items: flex-start; } }
-
 /* ── Revelar ao rolar ──────────────────────────────────────────────────── */
 .revelar { opacity: 0; transform: translateY(40px); transition: opacity 1s var(--ease), transform 1.2s var(--ease); }
 .revelar.visto { opacity: 1; transform: none; }

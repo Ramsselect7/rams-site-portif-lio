@@ -1,6 +1,6 @@
 # Rams Select · Site cinematográfico
 
-Site estático da Rams Select: a rolagem "toca" um vídeo da fachada até o balcão, seções com imagens fundidas ao fundo, montador de kit de churrasco / tábua de frios, botão de WhatsApp e Instagram, formulário de contato por e-mail.
+Site estático da Rams Select: a rolagem "toca" um vídeo da fachada até o balcão, seções com imagens fundidas ao fundo, botão de WhatsApp e Instagram, formulário de contato por e-mail.
 
 ## Estrutura
 
@@ -9,7 +9,6 @@ site/                 ← o site pronto para publicar (estático, sem build)
   index.html          ← conteúdo e seções
   estilo.css          ← cores, fontes e layout (tokens no topo)
   app.js              ← rolagem do vídeo, revelar, WhatsApp, formulário
-  montar.js           ← seção "Monte aqui" (catálogo, porções e ícones)
   config.js           ← nome, WhatsApp, e-mail e frames
   assets/
     logo.png          ← logo com fundo transparente
@@ -30,7 +29,6 @@ Alternativa sem servidor: abrir `site/index.html` direto no navegador (`ABRIR-SI
 
 - **Textos e seções**: `site/index.html`.
 - **Cores e fontes**: tokens `--fundo`, `--acento`, `--fonte-titulo` no topo de `site/estilo.css`.
-- **Itens do "Monte aqui"**, porções por pessoa e dicas: objeto `CATALOGO` em `site/montar.js`.
 - **WhatsApp, e-mail e Instagram**: `site/config.js` e o link `.insta` em `index.html`.
 - **Cardápio do restaurante**: lista `.cardapio` em `index.html`.
 
