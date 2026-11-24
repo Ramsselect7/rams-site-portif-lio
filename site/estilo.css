@@ -244,6 +244,12 @@ p { margin: 0 0 1em; color: var(--texto-suave); text-wrap: pretty; }
 .lojas strong { font-family: var(--fonte-titulo); font-weight: 500; font-size: 22px; }
 .lojas span { color: var(--texto-suave); font-size: 15px; }
 .lojas em { font-style: normal; font-size: 13px; letter-spacing: .04em; color: var(--acento); margin-top: 4px; }
+.lojas-tel { color: var(--texto-suave); text-decoration: none; }
+.lojas-tel:hover { color: var(--texto); }
+.lojas-rotas { display: flex; gap: 18px; margin-top: 8px; font-size: 13px; letter-spacing: .02em; }
+.lojas-rotas a { display: inline-flex; align-items: center; gap: 6px; color: var(--texto-suave); text-decoration: none; opacity: .85; transition: color .3s, opacity .3s; }
+.lojas-rotas a:hover { color: var(--acento); opacity: 1; }
+.lojas-rotas svg { width: 15px; height: 15px; flex: none; }
 
 .painel--form a { color: var(--texto); text-decoration-color: var(--acento); text-underline-offset: 3px; }
 

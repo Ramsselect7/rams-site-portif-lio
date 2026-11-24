@@ -47,10 +47,34 @@
   "instagram": "@ramsselect",
   "email_contato": "ramsselect1501@gmail.com",
   "lojas": [
-    {"nome": "Cachoeirinha", "endereco": "Av. Frederico Augusto Ritter, 751", "horario": "Seg a sex 7h às 20h · Sáb 7h às 18h", "extras": "Restaurante (seg a sáb, 11h30 às 14h30), padaria (todos os dias, 7h às 20h) e churrasqueira de degustação"},
-    {"nome": "Canoas", "endereco": "", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""},
-    {"nome": "Gravataí · Parada 79", "endereco": "Ao lado do Posto Apolo", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""},
-    {"nome": "Gravataí · Confraria", "endereco": "Ao lado da Confraria do Doce", "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h", "extras": ""}
+    {
+      "nome": "Cachoeirinha",
+      "endereco": "Av. Frederico Augusto Ritter, 751 - Distrito Industrial, Cachoeirinha - RS, 94935-820",
+      "telefone": "(51) 3113-3013",
+      "horario": "Seg a sex 7h às 20h · Sáb 7h às 18h",
+      "extras": "Restaurante (seg a sáb, 11h30 às 14h30), padaria e churrasqueira de degustação"
+    },
+    {
+      "nome": "Canoas",
+      "endereco": "R. Liberdade, 371 - Marechal Rondon, Canoas - RS",
+      "telefone": "",
+      "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h",
+      "extras": ""
+    },
+    {
+      "nome": "Gravataí · Parada 79",
+      "endereco": "Av. Dorival Cândido Luz de Oliveira, 917 - COHAB C, Gravataí - RS, 94030-001",
+      "telefone": "(51) 99923-2266",
+      "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h",
+      "extras": ""
+    },
+    {
+      "nome": "Gravataí · Confraria",
+      "endereco": "R. João Maria da Fonseca, 645 - Passo das Pedras, Gravataí - RS, 94035-190",
+      "telefone": "",
+      "horario": "Seg a sex 9h às 20h · Sáb 8h às 18h",
+      "extras": ""
+    }
   ],
   "secoes": [
     "abertura",
